@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./lotto.jpg);
+    background-size: cover;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 50%;
+    padding: 20px;
+}
+
+#tableLotto {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: bold;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.field {
+    border: 1px solid;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    border-radius: 15%;
+}
+
+.empty-field {
+    background-color: rgb(194, 191, 191);
+}
+
+#current-number {
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #F2D8C1;
+    border: 3px solid red;
+}
+
+.usedNumbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+tr {
+    display: flex;
+    gap: 4px;
+}
+
+.used-numbers {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #F2D8C1;
+    border: 5px solid red;
+}
+
+.refresh,
+.start,
+.pause {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 5px;
+    background-color: rgb(194, 191, 191);
+    cursor: pointer;
+}
+
+.refresh:hover,
+.start:hover,
+.pause:hover {
+    background-color: #ffe4cb;
+}
+
+.five {
+    padding: 50px 20px 50px 200px;
+    margin-left: 100px;
+    text-align: center;
+} 
+.five h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    position: relative;
+    color: #587493;
+    font-size: 2.5em;
+    font-weight: normal;
+    display: inline-block;
+    margin: 0;
+    line-height: 1;
+    padding: 8px 20px 8px 2px;
+    border-top: 4px solid;
+}
+  .five h1:before {
+    content: "New";
+    position: absolute;
+    top: -10px;
+    left: -160px;
+    font-size: 1.5em;
+    transform: rotate(-25deg);
+    font-family: 'Marck Script', cursive;
+}
+  .five h1:after {
+    content: ""; 
+    position: absolute;
+    width: 120%;
+    height: 4px;
+    right: 0;
+    bottom: -4px;
+    background: #587493;
+}
+@media (max-width: 580px) {
+    .five {padding-left: 130px;}
+    .five h1 {font-size: 2em;}
+    .five h1:before {left: -130px;}
+}
+@media (max-width: 480px) {
+    .five {padding-left: 100px;}
+    .five h1 {
+      font-size: 1.5em;
+      padding-right: 10px;
+}
+    .five h1:before {left: -100px;}
+}
+@media (max-width: 380px) {
+    .five {padding-left: 90px;}
+    .five h1 {font-size: 1.3em;}
+    .five h1:before {left: -88px;}
+}

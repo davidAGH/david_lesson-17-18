@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9f9da7;
+    font-size: 1.6rem;
+}
+  
+h1 {
+    font-weight: 300;
+    text-align: center;
+}
+  
+div {
+    position: relative;
+}
+  
+#wrapper {
+    background-color: #fff;
+    width: 650px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px 0 0 0;
+    border-radius: 4px;
+    box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+}
+  
+.form {
+    padding: 0 60px;
+}
+  
+input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 4px;
+}
+  
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 0 0 0 10px;
+    margin: 20px;
+    color: #8a8b8e;
+    border: 1px solid #c2c0ca;
+    font-style: normal;
+    font-size: 16px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    position: relative;
+    display: inline-block;
+    background: none;
+}
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #3ca9e2;
+}
+input[type="text"]:focus:invalid,
+input[type="email"]:focus:invalid {
+    color: #cc1e2b;
+    border-color: #cc1e2b;
+}
+input[type="text"]:valid ~ .validation,
+input[type="email"]:valid ~ .validation {
+    display: block;
+    border-color: #0C0;
+}
+input[type="text"]:valid ~ .validation span,
+input[type="email"]:valid ~ .validation span {
+    background: #0C0;
+    position: absolute;
+    border-radius: 6px;
+}
+input[type="text"]:valid ~ .validation span:first-child,
+input[type="email"]:valid ~ .validation span:first-child {
+    top: 30px;
+    left: 14px;
+    width: 20px;
+    height: 3px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+input[type="text"]:valid ~ .validation span:last-child,
+input[type="email"]:valid ~ .validation span:last-child {
+    top: 35px;
+    left: 8px;
+    width: 11px;
+    height: 3px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.change-input {
+    border: none;
+    outline: none;
+    width: 130px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    background-color: transparent;
+}
+  
+button {
+    border: none;
+    display: block;
+    background-color: #3ca9e2;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #329dd5;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+ 
+#userListSILL {
+    background-color: #eeedf1;
+    color: #8a8b8e;
+    font-size: 14px;
+    width: 100%;
+    padding: 3px 0;
+    border-radius: 0 0 4px 4px;
+}
+
+.right-main-items {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1px;
+    margin-top: 10px;
+    padding: 4px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.inputSearch {
+    display: flex;
+}
+
+#searchInputEmail,
+#searchInputAge,
+#searchInputLastName,
+#searchInputFirstName {
+    width: 20%;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+.userList {
+    min-width: 59%;
+    height: 100vh;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+    display: none;
+}
+
+#userList {
+    width: 900px;
+}
+
+.delete, .edit {
+    margin: 0;
+}
+
+p {
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+}
+
+.userList h2 {
+    margin: 5px;
+    margin-bottom: 30px;
+}
+
+.loading {
+    display: none;
+    font-weight: bold;
+    color: blue;
+  }
+  
+.error {
+    color: red;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="form">
+            <h1>Register</h1>
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName">
+                <span id="firstNameError" class="error"></span>
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName">
+                <span id="lastNameError" class="error"></span>
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="text" id="age">
+                <span id="ageError" class="error"></span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email">
+                <span id="emailError" class="error"></span>
+            </div>
+            <button type="button" onclick="addUser()" id="addButton">Create</button>
+            <button type="button" onclick="onCancel()">Cancel</button>
+        </div>
+        <div id="userListSILL">
+            <button onclick="toggleUserList()">User List</button>
+        </div>
+    </div>
+    <div id="userListSection" class="userList">
+        <h2>Search User</h2>
+        <div class="inputSearch">
+            <input type="text" id="searchInputFirstName" placeholder="Search by name" oninput="searchUsers()">
+            <input type="text" id="searchInputLastName" placeholder="Search by last name" oninput="searchUsers()">
+            <input type="text" id="searchInputAge" placeholder="Search by age" oninput="searchUsers()">
+        </div>
+        <h2>Users List</h2>
+        <div class="table">
+            <div id="userList"></div>
+        </div>
+        <button onclick="redirectToRegistration()">Register</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
